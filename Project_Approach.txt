@@ -30,7 +30,8 @@ main/java :
                      Utils ->  TestData.java //generates unique username for every execution, stores username n password                                            
                                   Log.java //using log4j2
 main/resources -> log4j2.xml
-test/java : Base -> BaseTest.java //open browser and quit
+test/java :       
+                  Base -> BaseTest.java //open browser and quit
                   tests -> RegisterTest.java  //with unique username and verify successful registration
                              LogoutTest.java    //click logout and verify successful logout
                              LoginTest.java      //enter username n password and verify successful login 
@@ -45,7 +46,6 @@ pom.xml -> dependencies used selenium, WebDriver manager, testng, log4j2-api, lo
 testng.xml
 
 To make automation script more efficient , we can use:
--> @FindBy 
 -> log 
 -> implicit or explicit timeouts
 
