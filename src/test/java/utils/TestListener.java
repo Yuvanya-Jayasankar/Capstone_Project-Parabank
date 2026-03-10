@@ -46,6 +46,10 @@ public class TestListener implements ITestListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        
+        if(result.getMethod().getRetryAnalyzer(result) == null) {
+            result.getMethod().setRetryAnalyzerClass(RetryAnalyzer.class);
+        }
     }
 
     @Override

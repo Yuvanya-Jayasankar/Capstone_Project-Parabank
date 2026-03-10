@@ -12,7 +12,8 @@ import utils.TestData;
 
 public class LoginTest extends BaseTest{
 	
-	@Test(priority = 3, dependsOnMethods = "tests.RegisterTest.RegisterDetails")
+	@Test(priority = 3, dependsOnMethods = "tests.RegisterTest.RegisterDetails",
+			retryAnalyzer = utils.RetryAnalyzer.class)
 	public void LoginUser(){
 		
 		 Log.info("Starting Login Test.");

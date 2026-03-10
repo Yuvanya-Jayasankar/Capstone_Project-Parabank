@@ -11,7 +11,8 @@ import pages.LogoutPage;
 
 public class LogoutTest extends BaseTest{
 	
-	@Test(priority = 2, dependsOnMethods = "tests.RegisterTest.RegisterDetails")
+	@Test(priority = 2, dependsOnMethods = "tests.RegisterTest.RegisterDetails",
+			retryAnalyzer = utils.RetryAnalyzer.class)
 	public void LogoutUser() {
 		Log.info("Starting Logout Test.");
 

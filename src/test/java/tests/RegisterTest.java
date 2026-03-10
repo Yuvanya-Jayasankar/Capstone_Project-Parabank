@@ -12,7 +12,7 @@ import utils.TestData;
 
 public class RegisterTest extends BaseTest{
 	
-	@Test(priority = 1)
+	@Test(priority = 1, retryAnalyzer = utils.RetryAnalyzer.class)
 	public void RegisterDetails() {
 		Log.info("Starting Registration.");
 		RegisterPage rp = new RegisterPage(getDriver());
