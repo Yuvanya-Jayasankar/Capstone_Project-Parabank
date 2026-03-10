@@ -9,7 +9,7 @@ public class LoginPage {
 		this.driver = driver;
 	} 
 	public void loginUsername(String user) {
-		driver.findElement(By.name("username")).sendKeys(user);
+		driver.findElement(By.cssSelector("input[type='text']")).sendKeys(user);
 	}
 	public void loginPassword(String pass) {
 		driver.findElement(By.name("password")).sendKeys(pass);

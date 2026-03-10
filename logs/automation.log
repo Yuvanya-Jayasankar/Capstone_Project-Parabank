@@ -269,3 +269,31 @@
 2026-03-10 13:00:43 INFO  utils.Log - Login Password: Test@123
 2026-03-10 13:00:43 INFO  utils.Log - Successfully Logged In :)
 2026-03-10 13:00:44 INFO  utils.Log - Browser Closed :)
+2026-03-10 15:46:02 INFO  utils.Log - Opening the browser.
+2026-03-10 15:46:08 INFO  utils.Log - Starting Registration.
+2026-03-10 15:46:08 INFO  utils.Log - Adding info...
+2026-03-10 15:46:10 INFO  utils.Log - Generated Username: user_9jjn8
+2026-03-10 15:46:10 INFO  utils.Log - Show password: Test@123
+2026-03-10 15:46:11 INFO  utils.Log - Verified
+2026-03-10 15:46:11 INFO  utils.Log - Registration Completed!!!
+2026-03-10 15:46:11 INFO  utils.Log - Starting Logout Test.
+2026-03-10 15:46:12 INFO  utils.Log - Logged Out...
+2026-03-10 15:46:12 INFO  utils.Log - Starting Login Test.
+2026-03-10 15:46:14 INFO  utils.Log - Login Username: user_9jjn8
+2026-03-10 15:46:14 INFO  utils.Log - Login Password: Test@123
+2026-03-10 15:46:14 INFO  utils.Log - Successfully Logged In :)
+2026-03-10 15:46:15 INFO  utils.Log - Browser Closed :)
+2026-03-10 15:51:04 INFO  utils.Log - Opening the browser.
+2026-03-10 15:51:10 INFO  utils.Log - Starting Registration.
+2026-03-10 15:51:10 INFO  utils.Log - Adding info...
+2026-03-10 15:51:11 INFO  utils.Log - Generated Username: user_hTpue
+2026-03-10 15:51:11 INFO  utils.Log - Show password: Test@123
+2026-03-10 15:51:13 INFO  utils.Log - Verified
+2026-03-10 15:51:13 INFO  utils.Log - Registration Completed!!!
+2026-03-10 15:51:13 INFO  utils.Log - Starting Logout Test.
+2026-03-10 15:51:15 INFO  utils.Log - Logged Out...
+2026-03-10 15:51:15 INFO  utils.Log - Starting Login Test.
+2026-03-10 15:51:16 INFO  utils.Log - Login Username: user_hTpue
+2026-03-10 15:51:16 INFO  utils.Log - Login Password: Test@123
+2026-03-10 15:51:16 INFO  utils.Log - Successfully Logged In :)
+2026-03-10 15:51:17 INFO  utils.Log - Browser Closed :)
