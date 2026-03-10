@@ -1,0 +1,16 @@
+<suite name="ParaBank Test Suite" verbose="2">
+
+ <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+<test name="Register Logout Login Flow">
+
+    <classes>
+        <class name="tests.RegisterTest"/>
+        <class name="tests.LogoutTest"/>
+        <class name="tests.LoginTest"/>
+    </classes>
+
+</test>
+
+</suite>

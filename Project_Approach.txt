@@ -1,0 +1,54 @@
+2. Parabank :
+
+              1. Start Browser:  https://parabank.parasoft.com/parabank/register.htm
+              2.Open ParaBank Registration Page
+              3.Fill Registration Form
+                  The registration form has fields like: First Name, Last Name, Address, 
+                  City, State, Zip Code, Phone Number, SSN, Username, Password, Confirm Password
+              4.Generate Unique Username
+              5.Submit Form
+              6.Verify Registration Success
+              7.Logout
+              8.Login with Same Credentials
+              9.Verify Login Success
+              10.Close Browser
+CONSTRAINTS:
+• Use Selenium WebDriver
+• Use Java programming language
+• The script should create a UNIQUE USERNAME for each execution
+
+Imp:
+Unique username for every execution -> why? output -> username already exits 
+username = unique identifier of account
+password = secret used to authenticate
+
+Project Structure: (POM-design)
+main/java : Base -> BaseTest.java //open browser and quit
+                     Pages -> RegisterPage.java  //Fill details -> Click register 
+                                    LogoutPage.java //After successful registration -> click logout
+                                    LoginPage.java //login with the registered credentials
+                     Utils ->  TestData.java //generates unique username for every execution, stores username n password                                                                                              
+                                  ExtentReport.java //report on testcases that run (Optional)
+                                  ScreenshotUtil.java //screenshot on failure   (Optional)
+                                  TestListener.java (Optional)
+                                  Log.java //using log4j2
+test/java : tests -> RegisterTest.java  //with unique username and verify successful registration
+                             LogoutTest.java    //click logout and verify successful logout
+                             LoginTest.java      //enter username n password and verify successful login 
+main/resources -> log4j2.xml
+screenshots //folder
+pom.xml -> dependencies used selenium, WebDriver manager, testng, log4j2-api, log4j2-core, commons-lang
+testng.xml
+
+To make automation script more efficient , we can use:
+-> log 
+-> implicit or explicit timeouts
+
+To generate UNIQUE USERNAME/random string:
+import org.apache.commons.lang3.RandomStringUtils; -> package use 
+org.apache.commons » commons-lang3  -> dependencies need to be added from mvn repository
+String randStr = RandomStringUtils.randomAlphanumeric(5); -> line of code used to generate
+
+STATIC = shared thing for the whole class.
+Without static, you must create an object to use it.
+With static, you can use it directly using the class name.
