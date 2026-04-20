@@ -1,17 +1,18 @@
-2. Parabank :
+2. Parabank-Automation :
 
                        1. Start Browser:  https://parabank.parasoft.com/parabank/register.htm
                        2.Open ParaBank Registration Page
                        3.Fill Registration Form
-                            The registration form has fields like: First Name, Last Name, Address, City, State, Zip Code, Phone Number,                          
+                            The registration form has fields like: First Name, Last Name, Address,
+                             City, State, Zip Code, Phone Number,                          
                             SSN, Username, Password, Confirm Password
                        4.Generate Unique Username
                        5.Submit Form
                        6.Verify Registration Success
                        7.Logout
-                      8.Login with Same Credentials
-                      9.Verify Login Success
-                      10.Close Browser
+                       8.Login with Same Credentials
+                       9.Verify Login Success
+                       10.Close Browser
 CONSTRAINTS:
 • Use Selenium WebDriver
 • Use Java programming language
@@ -25,20 +26,22 @@ password = secret used to authenticate
 Project Structure: (POM-design)
 main/java : 
                      Pages -> RegisterPage.java  //Fill details -> Click register 
-                                    LogoutPage.java //After successful registration -> click logout
-                                    LoginPage.java //login with the registered credentials
+                              LogoutPage.java //After successful registration -> click logout
+                              LoginPage.java //login with the registered credentials
+                              
                      Utils ->  TestData.java //generates unique username for every execution, stores username n password                                            
-                                  Log.java //using log4j2
+                                Log.java //using log4j2
 main/resources -> log4j2.xml
 test/java :       
                   Base -> BaseTest.java //open browser and quit
                   tests -> RegisterTest.java  //with unique username and verify successful registration
-                             LogoutTest.java    //click logout and verify successful logout
-                             LoginTest.java      //enter username n password and verify successful login 
+                           LogoutTest.java    //click logout and verify successful logout
+                           LoginTest.java      //enter username n password and verify successful login 
+                           
                   utils ->  ExtentReport.java //report on testcases that run 
-                                ScreenshotUtil.java //screenshot on failure
-                                TestListener.java 
-                                 RetryAnalyzer.java 
+                            ScreenshotUtil.java //screenshot on failure
+                            TestListener.java 
+                            RetryAnalyzer.java 
 logs -> automation.log //folder
 reports -> ExtentReport.html 
 screenshots //folder

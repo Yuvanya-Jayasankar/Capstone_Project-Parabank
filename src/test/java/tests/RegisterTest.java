@@ -13,12 +13,13 @@ import utils.TestData;
 public class RegisterTest extends BaseTest{
 	
 	@Test(priority = 1, retryAnalyzer = utils.RetryAnalyzer.class)
-	public void RegisterDetails() {
+	public void RegisterDetails() throws InterruptedException {
 		Log.info("Starting Registration.");
 		RegisterPage rp = new RegisterPage(getDriver());
 		Log.info("Adding info...");
 		
 		rp.enterFirstname("Stuart");
+		Thread.sleep(1000);
 		rp.enterLastname("Little");
 		rp.enterAddress("123 Main St.");
 		rp.enterCity("Chennai");
@@ -26,13 +27,14 @@ public class RegisterTest extends BaseTest{
 		rp.enterZipCode("12345");
 		rp.enterPhoneNumber("0123456789");
 		rp.enterSSN("123");
-		
+		Thread.sleep(2000);
 		rp.enterUsername(TestData.username);
+		Thread.sleep(2000);
 		rp.enterPassword(TestData.password);
 		rp.enterConfirm(TestData.password);
 		
 		rp.clickRegister();
-		
+		Thread.sleep(2000);
 		String expected = "Welcome Stuart Little";
 		WebElement element = getDriver().findElement(By.className("smallText"));
 		String actual = element.getText();

@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [ParaBank Test Suite]" verbose="2">
+  <listeners>
+    <listener class-name="utils.TestListener"/>
+  </listeners>
   <test thread-count="5" name="Register Logout Login Flow(failed)" verbose="2">
     <classes>
-      <class name="tests.LoginTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="LoginUser"/>
-        </methods>
-      </class> <!-- tests.LoginTest -->
       <class name="tests.RegisterTest">
         <methods>
           <include name="setUp"/>
@@ -17,6 +13,20 @@
           <include name="RegisterDetails"/>
         </methods>
       </class> <!-- tests.RegisterTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="LoginUser"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.LogoutTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="LogoutUser"/>
+        </methods>
+      </class> <!-- tests.LogoutTest -->
     </classes>
   </test> <!-- Register Logout Login Flow(failed) -->
 </suite> <!-- Failed suite [ParaBank Test Suite] -->

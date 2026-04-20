@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-10T15:51:10 IST" name="ParaBank Test Suite" finished-at="2026-03-10T15:51:16 IST" duration-ms="6389">
+  <suite started-at="2026-03-13T16:14:02 IST" name="ParaBank Test Suite" finished-at="2026-03-13T16:14:21 IST" duration-ms="18223">
     <groups>
     </groups>
-    <test started-at="2026-03-10T15:51:10 IST" name="Register Logout Login Flow" finished-at="2026-03-10T15:51:16 IST" duration-ms="6389">
+    <test started-at="2026-03-13T16:14:02 IST" name="Register Logout Login Flow" finished-at="2026-03-13T16:14:21 IST" duration-ms="18223">
       <class name="tests.LoginTest">
-        <test-method signature="LoginUser()[pri:3, instance:tests.LoginTest@68878f6d]" started-at="2026-03-10T15:51:15 IST" name="LoginUser" finished-at="2026-03-10T15:51:16 IST" depends-on-methods="tests.RegisterTest.RegisterDetails" duration-ms="1524" status="PASS">
+        <test-method signature="LoginUser()[pri:3, instance:tests.LoginTest@41488b16]" started-at="2026-03-13T16:14:15 IST" name="LoginUser" finished-at="2026-03-13T16:14:21 IST" depends-on-methods="tests.RegisterTest.RegisterDetails" duration-ms="5797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginUser -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.RegisterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@4a07d605]" started-at="2026-03-10T15:51:04 IST" name="setUp" finished-at="2026-03-10T15:51:10 IST" duration-ms="6316" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@74287ea3]" started-at="2026-03-13T16:13:57 IST" name="setUp" finished-at="2026-03-13T16:14:02 IST" duration-ms="5563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="RegisterDetails()[pri:1, instance:tests.RegisterTest@4a07d605]" started-at="2026-03-10T15:51:10 IST" name="RegisterDetails" finished-at="2026-03-10T15:51:13 IST" duration-ms="3183" status="PASS">
+        <test-method signature="RegisterDetails()[pri:1, instance:tests.RegisterTest@74287ea3]" started-at="2026-03-13T16:14:03 IST" name="RegisterDetails" finished-at="2026-03-13T16:14:12 IST" duration-ms="9171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegisterTest@4a07d605]" started-at="2026-03-10T15:51:17 IST" name="tearDown" finished-at="2026-03-10T15:51:17 IST" duration-ms="451" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegisterTest@74287ea3]" started-at="2026-03-13T16:14:21 IST" name="tearDown" finished-at="2026-03-13T16:14:22 IST" duration-ms="484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.RegisterTest -->
       <class name="tests.LogoutTest">
-        <test-method signature="LogoutUser()[pri:2, instance:tests.LogoutTest@2f01783a]" started-at="2026-03-10T15:51:13 IST" name="LogoutUser" finished-at="2026-03-10T15:51:15 IST" depends-on-methods="tests.RegisterTest.RegisterDetails" duration-ms="1580" status="PASS">
+        <test-method signature="LogoutUser()[pri:2, instance:tests.LogoutTest@68878f6d]" started-at="2026-03-13T16:14:12 IST" name="LogoutUser" finished-at="2026-03-13T16:14:15 IST" depends-on-methods="tests.RegisterTest.RegisterDetails" duration-ms="3153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogoutUser -->

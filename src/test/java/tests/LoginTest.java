@@ -14,7 +14,7 @@ public class LoginTest extends BaseTest{
 	
 	@Test(priority = 3, dependsOnMethods = "tests.RegisterTest.RegisterDetails",
 			retryAnalyzer = utils.RetryAnalyzer.class)
-	public void LoginUser(){
+	public void LoginUser() throws InterruptedException{
 		
 		 Log.info("Starting Login Test.");
 	        
@@ -23,9 +23,9 @@ public class LoginTest extends BaseTest{
 		lp.loginUsername(TestData.username);
 		
 		lp.loginPassword(TestData.password);
-		
+		Thread.sleep(2000);
 		lp.clickLogin();
-		
+		Thread.sleep(2000);
 		Log.info("Login Username: "+ TestData.username);
 		Log.info("Login Password: "+ TestData.password);
 		
